@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\SummerFortuneTeller\SummerFortuneTeller\bin\Debug\SummerFortuneTeller.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\SummerFortuneTeller\SummerFortuneTeller\bin\Debug\SummerFortuneTeller.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\SummerFortuneTeller\SummerFortuneTeller\bin\Debug\SummerFortuneTeller.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\SummerFortuneTeller\SummerFortuneTeller\obj\Debug\SummerFortuneTeller.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\SummerFortuneTeller\SummerFortuneTeller\obj\Debug\SummerFortuneTeller.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\SummerFortuneTeller\SummerFortuneTeller\obj\Debug\SummerFortuneTeller.pdb
