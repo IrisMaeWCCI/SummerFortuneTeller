@@ -56,7 +56,7 @@ namespace SummerFortuneTeller
                 Console.WriteLine("Which is your favorite ROYGBIV color?");
                 userROYGBIVResponse = Console.ReadLine();
             }
-            else if (userROYGBIVResponse == "red" || userROYGBIVResponse == "orange" || userROYGBIVResponse == "yellow" || userROYGBIVResponse == "blue" || userROYGBIVResponse == "indigo" || userROYGBIVResponse == "violet".ToLower())
+            else if (userROYGBIVResponse == "red" || userROYGBIVResponse == "orange" || userROYGBIVResponse == "yellow" || userROYGBIVResponse == "green" || userROYGBIVResponse == "blue" || userROYGBIVResponse == "indigo" || userROYGBIVResponse == "violet".ToLower())
             { 
                 Console.WriteLine("");
             }
@@ -152,10 +152,9 @@ namespace SummerFortuneTeller
             }
             else if (userROYGBIVResponse == "green")
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\n\tHappy travels on- you'll soon find you own a snazzy green moped!");
                 Console.ResetColor();
-
             }
             else if (userROYGBIVResponse =="blue")
             {
@@ -177,24 +176,17 @@ namespace SummerFortuneTeller
             }
             else 
             {
-                Console.WriteLine("\n\t\aFollow directions next time! Try again.");
+               Console.WriteLine("\n\t\aFollow directions next time! Try again.");
             }
 
-            //Allow the user to quit at any point this is my stretch task
-            //print nobody likes a quitter before the program quits
-
             //User Quits Option
-            Console.WriteLine("\n\t" + firstName+", you can quit at any time just by typing quit\n\nSee ya 'round!");
+            Console.WriteLine("\n\n\t" + firstName+", you can QUIT at any time just by typing QUIT\n\n\tSee ya 'round!");
             string userQuits = Console.ReadLine();
 
             if (userQuits == "quit")
             {
-                Console.WriteLine("\n\t\aNobody likes a quitter, " + firstName);
-                return;
-            }
-            else
-            {
-                Console.WriteLine("\n\tWe're glad you stayed; restart the program to have your fortune revealed to you once again...");
+                Console.WriteLine("\n\t\aBut...Nobody likes a quitter, " + firstName);
+                System.Environment.Exit(0);
             }
         }
     }
