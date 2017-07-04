@@ -10,6 +10,7 @@ namespace SummerFortuneTeller
     {
         static void Main(string[] args)
         {
+         
             //Part 1
             Console.WriteLine("Welcome to your Fortune Teller!\nLet's get started\n\nWhat is your first name?");
             string firstName = Console.ReadLine().ToLower();
