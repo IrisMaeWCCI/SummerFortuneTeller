@@ -12,25 +12,29 @@ namespace SummerFortuneTeller
         {
          
             //Part 1
+            //Prompt User, Receive User Input
+            //User Name
             Console.WriteLine("Welcome to your Fortune Teller!\nLet's get started\n\nWhat is your first name?");
             string firstName = Console.ReadLine().ToLower();
             Console.WriteLine("\nWhat is your last name?");
             string lastName = Console.ReadLine().ToLower();
             string fullName = firstName +" "+ lastName;
 
+            //User Age
             Console.WriteLine("\nWhat is your age?");
             int age = int.Parse(Console.ReadLine());
-            if (age>0 && age<131)
+            if (age>0 || age<131)
             {
-                Console.WriteLine("Thank you for entering your age.");
+                Console.WriteLine("");
             }
-            else if (0 < age && 130 > age)
+            else if (0 < age || 130 > age)
             {
                 Console.WriteLine("\nPlease enter an age between 1 and 130, "+firstName);
                  age = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine("\nPlease enter your birth month as a two digit number");
+            //Birth Month
+            Console.WriteLine("\nPlease enter your birth month as a two digit number, " + firstName);
             int birthMonth = int.Parse(Console.ReadLine());
             if (01 <= birthMonth || 12 >= birthMonth)
             {
@@ -41,28 +45,27 @@ namespace SummerFortuneTeller
                 Console.WriteLine("\nPlease enter a month between 1 and 12, " + firstName);
                 birthMonth = int.Parse(Console.ReadLine());
             }
-            //getting this if statement to work has been so annoying. still isn't working the way i want it to
-            //must set aside time later to work it out 
 
+            //ROGBIV 
             Console.WriteLine("\nWhich is your favorite of the ROYGBIV colors? Type help if you do not know what ROYGBIV means");
             string userROYGBIVResponse = Console.ReadLine().ToLower();
 
             if (userROYGBIVResponse == "help".ToLower())
-            {
+            { 
                 Console.WriteLine("R: Red\nO: Orange\nY: Yellow\nG: Green\nB: Blue\nI: Indigo\nV: Violet\n");
                 Console.WriteLine("Which is your favorite ROYGBIV color?");
                 userROYGBIVResponse = Console.ReadLine();
-
-                if (userROYGBIVResponse == "help" || userROYGBIVResponse == "red" || userROYGBIVResponse == "orange" || userROYGBIVResponse == "yellow" || userROYGBIVResponse == "blue" || userROYGBIVResponse == "indigo" || userROYGBIVResponse == "violet")
-
-                {
-                    Console.WriteLine("Sweet, I like " + userROYGBIVResponse + " too!");
-                }
-                else
-                {
-                    Console.WriteLine("\nPlease restart the program and try again.");
-                }
             }
+            else if (userROYGBIVResponse == "red" || userROYGBIVResponse == "orange" || userROYGBIVResponse == "yellow" || userROYGBIVResponse == "blue" || userROYGBIVResponse == "indigo" || userROYGBIVResponse == "violet".ToLower())
+            { 
+                Console.WriteLine("");
+            }
+            else
+            {
+                Console.WriteLine("\n\aPlease restart the program and try again.");
+                return;
+             }
+            //Siblings
             Console.WriteLine("\nHow many siblings do you have");
             int userAmountOfSiblings = int.Parse(Console.ReadLine());
 
@@ -86,7 +89,7 @@ namespace SummerFortuneTeller
 
             if ( 01>= birthMonth  || birthMonth >= 04)
             {
-                Console.WriteLine("\n\tYou will have $275000 in the bank!");
+                Console.WriteLine("\n\tYou will have $275,000 in the bank!");
             }
             else if (05 >= birthMonth || birthMonth >= 08)
             {
@@ -98,7 +101,7 @@ namespace SummerFortuneTeller
             }
             else
             {
-                Console.WriteLine("\n\tYou entered a number I cannot see would ever be in your fortune,\ttherefore you will have $0.00 in the bank!");
+                Console.WriteLine("\n\t\aYou have entered a number I cannot see would ever be in your fortune,\ttherefore you will have $0.00 in the bank!");
             }
 
             //Sibling # and vacation home
@@ -125,10 +128,8 @@ namespace SummerFortuneTeller
             }
             else if (userAmountOfSiblings < 0)
             {
-                Console.WriteLine("\n\tYour vacation home will be in your garage!");
+                Console.WriteLine("\n\t\aYour vacation home will be in your garage!");
             }
-
-            Console.WriteLine(birthMonth);
             
             // ROYGBIV and transportation
             if (userROYGBIVResponse=="red")
@@ -176,7 +177,7 @@ namespace SummerFortuneTeller
             }
             else 
             {
-                Console.WriteLine("\n\tFollow directions next time! Try again.");
+                Console.WriteLine("\n\t\aFollow directions next time! Try again.");
             }
 
             //Allow the user to quit at any point this is my stretch task
@@ -188,9 +189,8 @@ namespace SummerFortuneTeller
 
             if (userQuits == "quit")
             {
-                Console.WriteLine("\n\tNobody likes a quitter, " + firstName);
+                Console.WriteLine("\n\t\aNobody likes a quitter, " + firstName);
                 return;
-
             }
             else
             {
