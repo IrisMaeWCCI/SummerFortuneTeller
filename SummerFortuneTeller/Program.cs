@@ -122,7 +122,7 @@ namespace SummerFortuneTeller
             {
                 Console.WriteLine("\n\tYou will mysteriously obtain a vacation home will be in Michoacán!");
             }
-            else if (userAmountOfSiblings == 1)
+            else if (userAmountOfSiblings <3)
             {
                 Console.WriteLine("\n\tSoon you will possess a vacation home will be in Miami");
             }
@@ -147,7 +147,7 @@ namespace SummerFortuneTeller
             else if (userROYGBIVResponse =="yellow")
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("\n\tYour new mode of transportation will be your feet only-you're getting a \tpair of yellow TOMS shoes!");
+                Console.WriteLine("\n\tYour new mode of transportation will be a jazzy yellow helicopter!");
                 Console.ResetColor();
             }
             else if (userROYGBIVResponse == "green")
@@ -159,7 +159,7 @@ namespace SummerFortuneTeller
             else if (userROYGBIVResponse =="blue")
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("\n\tAs a new mode of transportation you'll be getting around using a blue pogo stick!");
+                Console.WriteLine("\n\tYour new mode of transportation will a blue pogo stick!");
                 Console.ResetColor();
             }
             else if (userROYGBIVResponse =="indigo")
