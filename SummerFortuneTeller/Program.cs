@@ -82,7 +82,7 @@ namespace SummerFortuneTeller
             }
             else
             {
-                Console.WriteLine("\n\n\t"+fullName + ", you are " + age + " years old and you will most assuredly retire in " + (age + 10) + " years");
+                Console.WriteLine("\n\n\t"+fullName + ", you are " + age + " years old and you'll retire in " + (age + 10) + " years");
             }
 
             //BirthMonth and $ in Bank
@@ -153,25 +153,25 @@ namespace SummerFortuneTeller
             else if (userROYGBIVResponse == "green")
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\n\tHappy travels on- you'll soon find you own a snazzy green moped!");
+                Console.WriteLine("\n\tYou will soon have unimaginable travels on a snazzy green moped...");
                 Console.ResetColor();
             }
             else if (userROYGBIVResponse =="blue")
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("\n\tYour new mode of transportation will a blue pogo stick!");
+                Console.WriteLine("\n\tYour current mode of transportation will be replaced by a blue pogo stick...");
                 Console.ResetColor();
             }
             else if (userROYGBIVResponse =="indigo")
             {
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
-                Console.WriteLine("\n\tYou'll have an indigo skate board to get around from now on!");
+                Console.WriteLine("\n\tA stunning indigo skate board will soon be yours...");
                 Console.ResetColor();
             }
             else if (userROYGBIVResponse =="violet")
             {
                 Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                Console.WriteLine("\n\tYou're now the proud owner of a violet BMW!");
+                Console.WriteLine("\n\tA violet BMW will soon be yours for the taking...");
                 Console.ResetColor();
             }
             else 
