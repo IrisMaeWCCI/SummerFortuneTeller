@@ -186,7 +186,7 @@ namespace SummerFortuneTeller
             if (userQuits == "quit")
             {
                 Console.WriteLine("\n\t\aBut...Nobody likes a quitter, " + firstName);
-                System.Environment.Exit(0);
+                System.Environment.Exit(1);
             }
         }
     }
